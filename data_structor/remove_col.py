@@ -32,3 +32,4 @@ print('\n')
 #df(원본객체)의 2개 열(column)을 삭제
 df.drop(['영어', '음악'], axis=1, inplace = True)
 print("df", df, sep = '\n')
+

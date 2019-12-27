@@ -23,3 +23,5 @@ print()
 df.rename(index = {'학생1':'준서', '학생2':'예은'}, inplace = True)
 print(df, df.index, df.columns, sep = '\n') #데이터프레임 행인덱스 열 이름
 print()
+
+
