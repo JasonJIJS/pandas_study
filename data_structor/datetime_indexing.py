@@ -28,7 +28,8 @@ print(df_ymd_range, '\n')
 
 print("# 시간, 간격 계산, 최근 180일 ~189일 사이의 값들만 선택")
 today = pd.to_datetime('2018-12-15')        # 기준일 생성
-df['time_delta'] = today - df.index        # 날짜 차이 계산
+df['time_delta'] = today - df.index         # 날짜 차이 계산
 df = df.set_index('time_delta')             # 행 인덱스로 지정
 df_180 = df['180 days':'189days']
 print(df_180)
+
